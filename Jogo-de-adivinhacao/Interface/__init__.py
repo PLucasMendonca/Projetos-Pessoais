@@ -1,4 +1,10 @@
 from condicoes import leiaInt
+import os
+
+
+def limpar():
+    os.system('cls' if os.name == 'nt' else 'clear')
+
 
 def linha(tam = 90):
     return '=' * tam
@@ -16,4 +22,5 @@ def menu(lista):
         c +=1
     print(linha())
     opc = leiaInt('Escolha a dificuldade:')
+    limpar()
     return opc
