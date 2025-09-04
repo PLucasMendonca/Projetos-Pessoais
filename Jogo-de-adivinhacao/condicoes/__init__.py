@@ -13,6 +13,7 @@ def limpar():
     os.system('cls' if os.name == 'nt' else 'clear')
 
 def resposta_correta(palpites,numero,chutes):
+    print()
     linha(f"Parabéns! Você acertou em {palpites} palpites")
     sleep(1)
     print(f"O número que pensei foi {numero}\n")
@@ -20,9 +21,9 @@ def resposta_correta(palpites,numero,chutes):
 
     if  palpites <= 3:
         print("Nossa, você me humilhou!")
-    elif 4 < palpites <= 7:
+    elif 4 <= palpites <= 7:
         print("Foi rápido até!")
-    elif 7< palpites <= 10:
+    elif 7 < palpites <= 10:
         print("Demorou um pouco, mas conseguiu!")
     else:
         print("Você ainda tentou bastante, hein? 😅")
@@ -47,9 +48,9 @@ def reiniciar_jogo(nivel):
 
 def ajuda(x,y):
     if x < y :
-        print('O número que escolhi é MAIOR... Tente novamente')
+        print('\nO número que escolhi é MAIOR... Tente novamente')
     elif x > y:
-        print('O número que escolhi é MENOR... Tente novamente')
+        print('\nO número que escolhi é MENOR... Tente novamente')
 
 def leiaInt(msg):
     while True:
@@ -67,7 +68,7 @@ def leiaInt(msg):
 def confirmar(x):
     while True:
         try:
-            resp = input(x).strip().upper()  # remove espaços e deixa maiúsculo
+            resp = input(x).strip().upper()
             if resp not in ['S', 'N']:
                 raise ValueError("Digite apenas S ou N")
         except ValueError as e:
@@ -75,6 +76,6 @@ def confirmar(x):
             continue
         except KeyboardInterrupt:
             print("\nEntrada de dados interrompida pelo usuário")
-            return 'N'   # pode retornar 'N' como padrão
+            return 'N'
         else:
             return resp
