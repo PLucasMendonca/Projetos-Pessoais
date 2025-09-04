@@ -15,7 +15,7 @@ O foco é **aprender na prática**, consolidar os conteúdos que venho estudando
 
 ## *📋 Projetos*
 * [ ] **Calculadora Básica** → operações matemáticas simples  
-* [ ] **Jogo de Adivinhação** → usuário tenta adivinhar um número  
+* [x] **Jogo de Adivinhação** → usuário tenta adivinhar um número  
 * [ ] **Lista de Tarefas (To-Do List)** → adicionar, remover e listar tarefas  
 * [ ] **Cadastro de Pessoas** → registrar e exibir dados básicos  
 * [ ] **Quiz de Perguntas** → jogo de perguntas e respostas  
