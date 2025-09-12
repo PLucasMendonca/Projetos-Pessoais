@@ -1,7 +1,19 @@
 
 
-ações = ['1 - teste', '2 - teste', '3 - testes']
-print(ações)
-n = int(input('Digite o número da lista em que o paciente não faz: '))
+class Paciente:
+    def __init__(self,nome,idade):
+        self.nome = nome
+        self.idade = idade
 
-print(f'Voce digitou o {n}')
+    def __str__(self):
+        return f'Paciente: {self.nome} de {self.idade}anos.'
+
+
+
+
+
+def main():
+    pass
+
+if __name__ == '__main__':
+    main()
