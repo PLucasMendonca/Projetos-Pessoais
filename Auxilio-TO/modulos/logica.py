@@ -73,5 +73,5 @@ def condicoes_fluxo(faixa_etaria):
     if sim_count >= total / 2:
         print("Metade ou mais das respostas são SIM → ação 1")
     else:
-        print("Metade ou mais das respostas são NÃO → ação 2")
+        processar_perguntas_nao(faixa_etaria)
     
